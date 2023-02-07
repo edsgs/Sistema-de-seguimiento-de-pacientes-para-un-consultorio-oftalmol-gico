@@ -22,6 +22,9 @@ $(document).ready(function(){ //Cuando el documento este cargado llamamos al dat
             url: '../../controller/paciente.php?op=listar',
             type : "get",
             dataType : "json",
+            data:function(data){
+                console.log(data);
+            },
             error: function(e){
                 console.log(e.responseText);	
             }
@@ -85,10 +88,11 @@ function guardaryeditar(e){
 
 function editar(idPaciente){
     $('#mdltitulo').html('Editar Registro');
-
+    limpiaValoresModal();
     $.post("../../controller/paciente.php?op=mostrar",{idPaciente:idPaciente},function(data){
         data = JSON.parse(data); //Transforma la informacion de la varible "data" en un JSON
         $('#idPaciente').val(data.idPaciente); //Se llama a la variable "idPaciente"
+        $('#idInflamacion').val(data.idInflamacion); //Se llama a la variable "idInflamacion"
         $('#nombrePac').val(data.nombrePac);
         $('#apellidoP').val(data.apellidoP);
         $('#apellidoM').val(data.apellidoM);
@@ -100,6 +104,29 @@ function editar(idPaciente){
         $('#colonia').val(data.colonia);
         $('#cp').val(data.cp);
         $('#ciudad').val(data.ciudad);
+        $('#UsoAnteojosLC_idUsoAnteojosLC').val(data.UsoAnteojosLC_idUsoAnteojosLC);
+        $('#tiempoUso').val(data.tiempoUso);
+        $('#Localizacion_idLocalizacion').val(data.Localizacion_idLocalizacion);
+        $('#sintomas').val(data.sintomas);
+        $('#Inflamacion_idInflamacion').val(data.Inflamacion_idInflamacion);
+        $('#alteracionesParpados').val(data.alteracionesParpados);
+        $('#tratamiento').val(data.tratamiento);
+        $('#fechaConsulta').val(data.fechaConsulta);
+        $('#Colores_idColores').val(data.Colores_idColores);
+        $('#Grado_idGrado').val(data.Grado_idGrado);
+        $('#Rx_idRx').val(data.Rx_idRx);
+        $('#AgudezaVisual_idAgudezaVisual').val(data.AgudezaVisual_idAgudezaVisual);
+        $('#Localizacion_idLocalizacion').val(data.Localizacion_idLocalizacion);
+        $('#Graduacion_idGraduacion').val(data.Graduacion_idGraduacion);
+        $('#Paciente_idPaciente').val(data.Paciente_idPaciente);
+        $('#UsoAnteojosLC_idUsoAnteojosLC').val(data.UsoAnteojosLC_idUsoAnteojosLC);
+        $('#Refraccion_idRx').val(data.Refraccion_idRx);
+        $('#oftalmoscopia').val(data.oftalmoscopia);
+        $('#diagnosticoRefractivo').val(data.diagnosticoRefractivo);
+        $('#especificaciones').val(data.especificaciones);
+        $('#tipoPadecimiento_idtipoPadecimiento').val(data.tipoPadecimiento_idtipoPadecimiento);
+        $('#descripcion').val(data.descripcion);
+        $('#tratamientoPadecimiento').val(data.tratamientoPadecimiento);
     });
 
     $('#modalpaciente').modal('show');
@@ -131,6 +158,44 @@ function eliminar(idPaciente){
         }
     })
 
+}
+
+
+function limpiaValoresModal(){
+    $('#idPaciente').val(''); //Se llama a la variable "idPaciente"
+    $('#nombrePac').val('');
+    $('#apellidoP').val('');
+    $('#apellidoM').val('');
+    $('#edad').val('');
+    $('#Sexo_idSexo').val('');
+    $('#Ocupacion_idOcupacion').val('');
+    $('#telefono').val('');
+    $('#calleNumero').val('');
+    $('#colonia').val('');
+    $('#cp').val('');
+    $('#ciudad').val('');
+    $('#UsoAnteojosLC_idUsoAnteojosLC').val('');
+    $('#tiempoUso').val('');
+    $('#Localizacion_idLocalizacion').val('');
+    $('#Inflamacion_idInflamacion').val('');
+    $('#alteracionesParpados').val('');
+    $('#tratamiento').val('');
+    $('#fechaConsulta').val('');
+    $('#Colores_idColores').val('');
+    $('#Grado_idGrado').val('');
+    $('#Rx_idRx').val('');
+    $('#AgudezaVisual_idAgudezaVisual').val('');
+    $('#Localizacion_idLocalizacion').val('');
+    $('#Graduacion_idGraduacion').val('');
+    $('#Paciente_idPaciente').val('');
+    $('#UsoAnteojosLC_idUsoAnteojosLC').val('');
+    $('#Refraccion_idRx').val('');
+    $('#oftalmoscopia').val('');
+    $('#diagnosticoRefractivo').val('');
+    $('#especificaciones').val('');
+    $('#tipoPadecimiento_idtipoPadecimiento').val('');
+    $('#descripcion').val('');
+    $('#tratamientoPadecimiento').val('');
 }
 
 $(document).on("click","#btnnuevo", function(){

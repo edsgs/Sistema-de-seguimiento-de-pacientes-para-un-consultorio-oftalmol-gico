@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 
-        <title>Registrarse | Mesa de Partes</title>
+        <title>Registrarse | Consultorio Oftalmológico</title>
 
         <meta name="description" content="Codebase - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
         <meta name="author" content="pixelcave">
@@ -33,13 +33,13 @@
                         <div class="hero-static col-md-6 col-xl-8 d-none d-md-flex align-items-md-end">
                             <div class="p-30 invisible" data-toggle="appear">
                                 <p class="font-size-h3 font-w600 text-white mb-5">
-                                    Empresa
+                                   Consultorio
                                 </p>
                                 <p class="font-size-h5 text-white">
-                                    <i class="fa fa-angles-right"></i> www.paginaweb.com
+                                    
                                 </p>
                                 <p class="font-italic text-white-op">
-                                    Copyright &copy; <span class="js-year-copy">2017</span>
+                                    
                                 </p>
                             </div>
                         </div>
@@ -49,7 +49,7 @@
                                 <div class="px-30 py-10">
                                     <a class="link-effect font-w700" href="index.html">
                                         <i class="si si-fire"></i>
-                                        <span class="font-size-xl text-primary-dark">Mesa de</span><span class="font-size-xl">Partes</span>
+                                        <span class="font-size-xl text-primary-dark">Consultorio</span><span class="font-size-xl"> Oftalmológico</span>
                                     </a>
                                     <h1 class="h3 font-w700 mt-30 mb-10">Crear Cuenta</h1>
                                     <h2 class="h5 font-w400 text-muted mb-0">Por favor agrege los detalles</h2>

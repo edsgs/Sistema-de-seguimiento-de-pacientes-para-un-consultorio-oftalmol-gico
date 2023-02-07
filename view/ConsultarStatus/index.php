@@ -24,7 +24,7 @@
                                 <a class="img-link mr-5" href="be_pages_generic_profile.html">
                                     <img class="img-avatar img-avatar32" src="../../public/img/avatars/avatar15.jpg" alt="">
                                 </a>
-                                <a class="align-middle link-effect text-primary-dark font-w600" href="be_pages_generic_profile.html">John Smith</a>
+                                <a class="align-middle link-effect text-primary-dark font-w600" href="be_pages_generic_profile.html"></a>
                             </div>
                         </div>
                     </div>

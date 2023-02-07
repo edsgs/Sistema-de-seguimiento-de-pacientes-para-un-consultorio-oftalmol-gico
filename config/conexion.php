@@ -6,7 +6,7 @@
 
         protected function Conexion(){ //Cadena de conexion
             try{ 
-                $conectar = $this->dbh = new PDO("mysql:local=localhost; dbname=optica2","root","");
+                $conectar = $this->dbh = new PDO("mysql:local=localhost; dbname=optica4","root","");
 
                 return $conectar; //Retorna a la funcion Conexion
             }catch(Exception $e){
@@ -20,7 +20,7 @@
         }
 
         public function ruta(){
-            return "http://localhost/optica2/";
+            return "http://localhost/optica4/";
         }
    }
 ?>

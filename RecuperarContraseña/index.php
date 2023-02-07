@@ -31,11 +31,9 @@
                     <div class="row mx-0 bg-black-op">
                         <div class="hero-static col-md-6 col-xl-8 d-none d-md-flex align-items-md-end">
                             <div class="p-30 invisible" data-toggle="appear">
-                                <p class="font-size-h3 font-w600 text-white">
-                                    Get Inspired and Create.
+                                <p class="font-size-h3 font-w600 text-white">                                
                                 </p>
-                                <p class="font-italic text-white-op">
-                                    Copyright &copy; <span class="js-year-copy">2017</span>
+                                <p class="font-italic text-white-op">                                    
                                 </p>
                             </div>
                         </div>
@@ -47,7 +45,7 @@
                                         <i class="si si-fire"></i>
                                         <span class="font-size-xl text-primary-dark">code</span><span class="font-size-xl">base</span>
                                     </a>
-                                    <h1 class="h3 font-w700 mt-30 mb-10">Mesa de Partes</h1>
+                                    <h1 class="h3 font-w700 mt-30 mb-10">Consultorio Oftalmológico</h1>
                                     <h2 class="h5 font-w400 text-muted mb-0">Recuperar Contraseña</h2>
                                 </div>
                                 <form class="js-validation-signin px-30" action="be_pages_auth_all.html" method="post">
